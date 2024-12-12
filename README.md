@@ -1,5 +1,13 @@
 # ngx-ripple
 
+<a href="https://ngxui.com" target="_blank" style="display: flex;gap: .5rem;align-items: center;cursor: pointer; padding: 0 0 0 0; height: fit-content;">
+  <img src="https://ngxui.com/assets/img/ngxui-logo.png" style="width: 64px;height: 64px;">
+  <p style="font-weight: bold; padding: 0; margin: 0; font-size: 4rem">NGXUI</p>
+</a>
+
+This Library is part of the NGXUI ecosystem. <br>
+View all available components at https://ngxui.com
+
 `@omnedia/ngx-ripple` is an Angular library that provides a ripple animation effect for your Angular components. This component creates an expanding ripple effect with customizable color, border, and animation duration. Perfect for adding an interactive and engaging effect to backgrounds or containers in your application.
 
 ## Features
@@ -21,21 +29,23 @@ npm install @omnedia/ngx-ripple
 Import the `NgxRippleComponent` in your Angular module or component:
 
 ```typescript
-import { NgxRippleComponent } from '@omnedia/ngx-ripple';
+import {NgxRippleComponent} from '@omnedia/ngx-ripple';
 
 @Component({
   ...
-  imports: [
-    ...
-    NgxRippleComponent,
-  ],
+    imports:
+[
   ...
+    NgxRippleComponent,
+],
+...
 })
 ```
 
 Use the component in your template:
 
 ```html
+
 <om-ripple
   [rippleColor]="'rgba(0, 255, 255, 0.5)'"
   [rippleBorderColor]="'#00ffff'"
@@ -49,6 +59,7 @@ Use the component in your template:
 ## API
 
 ```html
+
 <om-ripple
   [rippleColor]="rippleColor"
   [rippleBorderColor]="rippleBorderColor"
@@ -67,6 +78,7 @@ Use the component in your template:
 ## Example
 
 ```html
+
 <om-ripple
   [rippleColor]="'rgba(255, 105, 180, 0.6)'"
   [rippleBorderColor]="'#ff69b4'"
